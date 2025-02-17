@@ -26,10 +26,12 @@ A YOLOv8m model was trained to detect and isolate wagon identification numbers f
 ### Wagon Number Recognition
 The cropped wagon number images are subsequently processed using a custom-trained YOLOv8m model for digit recognition. The model identifies and extracts each digit, sorting them in a top-to-bottom, left-to-right order. The recognized digits are systematically stored in a structured dictionary format, where each wagon number is mapped accordingly. Additionally, delineation detection is performed using YOLOv8s to associate all images belonging to the same wagon, ensuring accurate tracking and identification.
 
+![image alt](https://github.com/viltu-jujhajiya/Wagon-Number-Recognition-in-Real-Time/blob/main/workflow.jpg?raw=true)
+
 ## Model Performance
 | Model        | Task                  | Accuracy | Speed  |
 |-------------|----------------------|---------|--------|
-| YOLOv8-Small | Delineation Detection | 97%     | Fast   |
-| YOLOv8-Medium | Wagon ID Detection   | 96%     | Faster |
+| YOLOv8-Small | Delineation Detection | 97%     | Faster |
+| YOLOv8-Medium | Wagon ID Detection   | 96%     | Fast   |
 | YOLOv8-Medium | Wagon ID Recognition | 91%     | Fast   |
 
